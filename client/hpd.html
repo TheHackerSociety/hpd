@@ -1,14 +1,45 @@
 <head>
   <title>hpd</title>
+    
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
-<body>
-  <h1>Welcome to Meteor!</h1>
 
-  {{> hello}}
-</body>
+<template name="layout">
+  <nav>
+    <div class="nav-wrapper">
+        {{#with back}}
+        <ul class="left">
+            <li><a href="{{pathFor this}}"><i class="material-icons">arrow_back</i></a></li>
+        </ul>
+        {{/with}}
+        
+        <a href="#" class="brand-logo center">HPD</a>
+    </div>
+  </nav>
+    
+    <main>
+        <div class="container">
+            {{> yield}}
+        </div>
+    </main>
+</template>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="showCategories">
+    <div class="collection">
+        
+    {{#each categories}}
+        <a class="collection-item" href="{{pathFor 'category.show'}}">{{name}}</a>
+    {{/each}}
+        
+    </div>
+</template>
+
+<template name="showCategory">
+    <div class="collection">
+        {{#each links}}
+        <a class="collection-item" target="_blank" href="{{url}}">{{name}}</a>
+        {{/each}}
+    </div>
 </template>
