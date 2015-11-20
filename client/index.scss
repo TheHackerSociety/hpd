@@ -1,0 +1,25 @@
+/*
+    Document   : hpd/client/index.scss
+    Created on : 2015-10-21 12:25 AM
+    Author     : lablancas
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+$poetic_materialize_scss: '.meteor/local/build/programs/server/assets/packages/poetic_materialize-scss';
+
+// If you want to override materialize sass variables you can uncomment the following:
+@import ".meteor/local/build/programs/server/assets/packages/poetic_materialize-scss/bower_components/materialize/sass/components/_color.scss";
+$primary-color: color("blue", "darken-4");
+$link-color: color("light-blue", "darken-1") !default;
+
+// import main scss file
+@import ".meteor/local/build/programs/server/assets/packages/poetic_materialize-scss/bower_components/materialize/sass/materialize.scss";
+
+@media #{$small-and-down} {
+    .nav-wrapper ul, .nav-wrapper ul li, .nav-wrapper ul li a, .nav-wrapper ul li a i {
+        line-height: 56px;
+        height: 56px;
+    }
+}
