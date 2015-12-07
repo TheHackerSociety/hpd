@@ -9,7 +9,7 @@
 
 
 Template.showCategories.helpers({
-    categories: Categories
+    categories: Categories.find()
 });
 
 Template.showCategory.helpers({
@@ -17,5 +17,3 @@ Template.showCategory.helpers({
         return _.findWhere(categories, {_id: this._id}).links;
     }
 });
-
-
