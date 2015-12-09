@@ -9,4 +9,5 @@ autopublish
 insecure
 fourseven:scss
 iron:router
+fortawesome:fontawesome
 materialize:materialize

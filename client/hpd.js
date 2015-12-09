@@ -13,12 +13,19 @@ categories = [
     {_id: '1',
      name: 'Find My Towed Vehicle (U)',
      links: [
-        {name: 'Find My Towed Vehicle', url: 'http://findmytowedcar.com/tvrmscitizen/mainpage.aspx'},
+        {
+          name: 'Find My Towed Vehicle',
+          url: 'http://findmytowedcar.com/tvrmscitizen/mainpage.aspx'
+        },
     ]},
     {_id: '2',
      name: 'Social Connections',
      links: [
-        {name: 'Facebook', url: 'https://www.facebook.com/Houstonpolice'},
+        {
+          name: 'Facebook',
+          url: 'https://www.facebook.com/Houstonpolice',
+          icon: 'fa fa-facebook'
+        },
         {name: 'Twitter', url: 'https://twitter.com/houstonpolice'},
         {name: 'YouTube', url: 'https://www.youtube.com/user/houstonpolicedept '},
         {name: 'Podcasts', url: 'http://feeds.feedburner.com/hpdreports '},
@@ -94,6 +101,9 @@ Template.categoryBlock.helpers({
   url: function() {
     return this.links[0].url;
   },
+  iconClass: function() {
+    return this.links[0].icon;
+  }
 });
 
 
@@ -107,5 +117,8 @@ Template.showCategories.onRendered(function(){
 Template.showCategory.helpers({
     links: function() {
         return _.findWhere(categories, {_id: this._id}).links;
-    }
+    },
+  iconClass: function() {
+    return this.icon;
+  }
 });
