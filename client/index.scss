@@ -1,5 +1,8 @@
-.light-blue{
+.light-blue-background{
   background-color: #0277bd;
+}
+.light-blue-font{
+  color: #0277bd;
 }
 
 nav{
@@ -15,4 +18,12 @@ nav{
   ul{
     margin: 0;
   }
+}
+.collection a.collection-item ,
+div.collapsible-header{
+  @extend .light-blue-font, darken-3;
+  font-family: roberto-bold;
+}
+a {
+   font-family: roberto-bold;
 }
