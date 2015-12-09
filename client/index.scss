@@ -5,6 +5,7 @@
 nav{
   @extend .light-blue, darken-3;
   height: 150px;
+  background: url('splash.jpg');
   .brand-logo.center{
       margin: 45px 0;
   }
