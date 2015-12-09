@@ -6,16 +6,18 @@
 * To change this template use Tools | Templates.
 */
 
+
+
 // TODO: maybe we should put this into a Mongo.Collection
 categories = [
     {_id: '1',
      name: 'Find My Towed Vehicle (U)',
-     links: [	
+     links: [
         {name: 'Find My Towed Vehicle', url: 'http://findmytowedcar.com/tvrmscitizen/mainpage.aspx'},
     ]},
     {_id: '2',
      name: 'Social Connections',
-     links: [	
+     links: [
         {name: 'Facebook', url: 'https://www.facebook.com/Houstonpolice'},
         {name: 'Twitter', url: 'https://twitter.com/houstonpolice'},
         {name: 'YouTube', url: 'https://www.youtube.com/user/houstonpolicedept '},
@@ -25,12 +27,12 @@ categories = [
     ]},
     {_id: '3',
      name: 'Jail Inquiry (U)',
-     links: [	
+     links: [
         {name: 'Jail Inquiry', url: 'http://mycity.houstontx.gov/jails/'},
     ]},
     {_id: '4',
      name: 'Report Information',
-     links: [	
+     links: [
         {name: 'Crime Stoppers', url: 'http://www.crime-stoppers.org/'},
         {name: 'Stop Houston Gangs', url: 'http://www.stophoustongangs.org/'},
         {name: 'Cash for Crooks', url: 'http://www.houstontx.gov/police/cash_for_crooks'},
@@ -41,24 +43,24 @@ categories = [
     ]},
     {_id: '5',
      name: 'Make Complaint / Commend an Officer',
-     links: [	
+     links: [
         {name: 'Make a Complaint', url: 'http://www.houstontx.gov/police/contact/iad.htm'},
         {name: 'Commend an Officer – Form', url: 'http://www.houstontx.gov/police/pdfs/Commendation_from_Citizen_Form.pdf'},
     ]},
     {_id: '6',
      name: 'Police Station Phone / Address',
-     links: [	
+     links: [
         {name: 'Station Address', url: 'http://www.houstontx.gov/police/substations'},
         {name: 'Police Phone Numbers', url: 'http://www.houstontx.gov/police/phone.htm'},
     ]},
     {_id: '7',
      name: 'Municipal Court Information',
-     links: [	
+     links: [
         {name: 'Municipal Court Information', url: 'http://www.houstontx.gov/courts/'},
     ]},
     {_id: '8',
      name: 'Alert Notice',
-     links: [	
+     links: [
         {name: 'Alert Notice', url: 'https://ehpd.houstontx.gov/citizenalert/'},
     ]},
     {_id: '9',
@@ -73,7 +75,7 @@ categories = [
     ]},
     {_id: '10',
      name: 'Services, Volunteer or Become A Police Officer',
-     links: [	
+     links: [
         {name: 'Volunteer Program', url: 'http://www.houstontx.gov/police/vip/'},
         {name: 'PIP', url: 'http://www.houstontx.gov/police/pip/home'},
         {name: 'Victim Services', url: 'http://www.houstontx.gov/police/vsu/'},
@@ -84,6 +86,12 @@ categories = [
 Template.showCategories.helpers({
     categories: categories
 });
+
+Template.showCategories.onRendered(function(){
+  $('.collapsible').collapsible({
+    accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+  });
+})
 
 Template.showCategory.helpers({
     links: function() {
