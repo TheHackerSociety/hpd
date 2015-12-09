@@ -84,8 +84,19 @@ categories = [
 ];
 
 Template.showCategories.helpers({
-    categories: categories
+  categories: categories
 });
+
+Template.categoryBlock.helpers({
+  nested: function() {
+    return (this.links.length > 1);
+  },
+  url: function() {
+    return this.links[0].url;
+  },
+});
+
+
 
 Template.showCategories.onRendered(function(){
   $('.collapsible').collapsible({

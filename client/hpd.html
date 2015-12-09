@@ -31,15 +31,30 @@
 <template name="showCategories">
   <ul class="collapsible" data-collapsible="accordion">
     {{#each categories}}
-    <li>
-      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>{{name}}</div>
-      <div class="collapsible-body">
-        {{>showCategory}}
-      </div>
-    </li>
+    {{>categoryBlock}}
     {{/each}}
   </ul>
 
+</template>
+
+<template name='categoryBlock'>
+
+  {{#if nested}}
+  <li>
+    <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>{{name}}</div>
+    <div class="collapsible-body">
+      {{>showCategory}}
+    </div>
+  </li>
+  {{else}}
+  <li>
+    <a class="collection-item" target="_blank" href="{{url}}">
+      <div class="collapsible-header">
+        {{name}}
+      </div>
+    </a>
+  </li>
+  {{/if}}
 </template>
 
 <template name="showCategory">
