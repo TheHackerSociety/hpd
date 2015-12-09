@@ -19,12 +19,17 @@ a {
 }
 //HEADER
 nav{
-  @extend .light-blue, darken-3;
-  height: 150px;
-  background: url('splash.jpg');
-  background-size: cover;
-  .brand-logo.center{
-    margin: 45px 0;
+  background-color: #25519A;
+  .nav-wrapper{
+    @extend .light-blue, darken-3;
+    height: 150px;
+    background: url('splash.jpg');
+    background-size: cover;
+    background-position: 0 47px;
+    background-repeat: no-repeat;
+    .brand-logo.center{
+      margin: 45px 0;
+    }
   }
 }
 .container{
