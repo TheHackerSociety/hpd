@@ -4,21 +4,27 @@
 .light-blue-font{
   color: #0277bd;
 }
-$font-family: roberto-bold;
+$font-family: roboto-bold;
+
+//FONT FAMILY for Accordion
 .collection a.collection-item ,
 div.collapsible-header{
   @extend .light-blue-font, darken-3;
   font-family: $font-family;
 }
+
+//FONT FAMILY for Header
 a {
    font-family: $font-family;
 }
+//HEADER
 nav{
   @extend .light-blue, darken-3;
   height: 150px;
   background: url('splash.jpg');
+  background-size: cover;
   .brand-logo.center{
-      margin: 45px 0;
+    margin: 45px 0;
   }
 }
 .container{
