@@ -31,6 +31,7 @@ json@1.0.3
 launch-screen@1.0.2
 livedata@1.0.13
 logging@1.0.7
+materialize:materialize@0.97.3
 meteor@1.1.6
 meteor-platform@1.2.2
 minifiers@1.1.5
@@ -39,7 +40,6 @@ mobile-status-bar@1.0.3
 mongo@1.1.0
 observe-sequence@1.0.6
 ordered-dict@1.0.3
-poetic:materialize-scss@1.2.10
 random@1.0.3
 reactive-dict@1.1.0
 reactive-var@1.0.5
