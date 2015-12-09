@@ -1,10 +1,17 @@
 .light-blue{
   background-color: #0277bd;
 }
+
 nav{
   @extend .light-blue, darken-3;
   height: 150px;
   .brand-logo.center{
       margin: 45px 0;
+  }
+}
+.container{
+  width: 100%;
+  ul{
+    margin: 0;
   }
 }
