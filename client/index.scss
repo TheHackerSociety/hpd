@@ -19,13 +19,13 @@ a {
 }
 //HEADER
 nav{
-  background-color: #25519A;
+  background-color: #29539F;
   .nav-wrapper{
     @extend .light-blue, darken-3;
     height: 150px;
     background: url('splash.jpg');
     background-size: cover;
-    background-position: 0 47px;
+    background-position: 0 30px;
     background-repeat: no-repeat;
     .brand-logo.center{
       margin: 45px 0;
