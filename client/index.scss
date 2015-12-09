@@ -4,7 +4,15 @@
 .light-blue-font{
   color: #0277bd;
 }
-
+$font-family: roberto-bold;
+.collection a.collection-item ,
+div.collapsible-header{
+  @extend .light-blue-font, darken-3;
+  font-family: $font-family;
+}
+a {
+   font-family: $font-family;
+}
 nav{
   @extend .light-blue, darken-3;
   height: 150px;
@@ -18,12 +26,4 @@ nav{
   ul{
     margin: 0;
   }
-}
-.collection a.collection-item ,
-div.collapsible-header{
-  @extend .light-blue-font, darken-3;
-  font-family: roberto-bold;
-}
-a {
-   font-family: roberto-bold;
 }
