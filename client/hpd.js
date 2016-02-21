@@ -19,19 +19,10 @@ categories = [
         },
     ]},
     {_id: '2',
-     name: 'Social Connections',
-     links: [
-        {
-          name: 'Facebook',
-          url: 'https://www.facebook.com/Houstonpolice',
-          icon: 'fa fa-facebook'
-        },
-        {name: 'Twitter', url: 'https://twitter.com/houstonpolice'},
-        {name: 'YouTube', url: 'https://www.youtube.com/user/houstonpolicedept '},
-        {name: 'Podcasts', url: 'http://feeds.feedburner.com/hpdreports '},
-        {name: 'Blog', url: 'http://www.hpdblog.com/'},
-        {name: 'News Release', url: 'http://www.houstontx.gov/police/news'},
-    ]},
+        name: 'Alert Notice',
+        links: [
+            {name: 'Alert Notice', url: 'https://ehpd.houstontx.gov/citizenalert/'},
+        ]},
     {_id: '3',
      name: 'Jail Inquiry (U)',
      links: [
@@ -42,10 +33,10 @@ categories = [
      links: [
         {name: 'Crime Stoppers', url: 'http://www.crime-stoppers.org/'},
         {name: 'Stop Houston Gangs', url: 'http://www.stophoustongangs.org/'},
-        {name: 'Cash for Crooks', url: 'http://www.houstontx.gov/police/cash_for_crooks'},
+        {name: 'Cash for Crooks', url: 'http://www.houstontx.gov/police/cash_for_crooks.htm'},
         {name: 'Online Report', url: 'http://www.houstontx.gov/police/online_report.htm'},
         {name: 'Report Gang Activity', url: 'http://www.houstontx.gov/police/gang/'},
-        {name: 'News Release', url: 'http://www.houstontx.gov/police/news'},
+        {name: 'News Release', url: 'http://www.houstontx.gov/police/news.htm'},
         {name: 'iWatch Regional Terrorism Prevention', url: 'http://www.readyhoustontx.gov/iwatchhouston/'},
     ]},
     {_id: '5',
@@ -57,7 +48,7 @@ categories = [
     {_id: '6',
      name: 'Police Station Phone / Address',
      links: [
-        {name: 'Station Address', url: 'http://www.houstontx.gov/police/substations'},
+        {name: 'Station Address', url: 'http://www.houstontx.gov/police/contact/substations.htm'},
         {name: 'Police Phone Numbers', url: 'http://www.houstontx.gov/police/phone.htm'},
     ]},
     {_id: '7',
@@ -66,15 +57,23 @@ categories = [
         {name: 'Municipal Court Information', url: 'http://www.houstontx.gov/courts/'},
     ]},
     {_id: '8',
-     name: 'Alert Notice',
-     links: [
-        {name: 'Alert Notice', url: 'https://ehpd.houstontx.gov/citizenalert/'},
-    ]},
+        name: 'Social Connections',
+        links: [
+            {
+                name: 'Facebook',
+                url: 'https://www.facebook.com/Houstonpolice',
+                icon: 'fa fa-facebook'
+            },
+            {name: 'Twitter', url: 'https://twitter.com/houstonpolice', icon: 'fa fa-twitter'},
+            {name: 'YouTube', url: 'https://www.youtube.com/user/houstonpolicedept', icon: 'fa fa-youtube'},
+            {name: 'Podcasts', url: 'http://feeds.feedburner.com/hpdreports', icon: 'fa fa-rss'},
+            {name: 'Blog', url: 'http://www.hpdblog.com/', icon: 'fa fa-newspaper-o'},
+        ]},
     {_id: '9',
      name: 'Resources',
      links: [
         {name: 'Houston Police Explorers', url: 'http://www.houstonpoliceexplorers.com'},
-        {name: 'Houston Police Foundation,', url: 'http://www.houstonpolicefoundation.org/'},
+        {name: 'Houston Police Foundation', url: 'http://www.houstonpolicefoundation.org/'},
         {name: 'Houston Police Retired Officers Association', url: 'http://www.hpdretired.com/'},
         {name: 'Mental Health Division', url: 'http://www.houstontx.gov/police/divisions/mental_health/'},
         {name: '100 Club', url: 'https://www.the100club.org/'},
@@ -84,7 +83,7 @@ categories = [
      name: 'Services, Volunteer or Become A Police Officer',
      links: [
         {name: 'Volunteer Program', url: 'http://www.houstontx.gov/police/vip/'},
-        {name: 'PIP', url: 'http://www.houstontx.gov/police/pip/home'},
+        {name: 'PIP', url: 'http://www.houstontx.gov/police/pip'},
         {name: 'Victim Services', url: 'http://www.houstontx.gov/police/vsu/'},
         {name: 'Become A Police Officer', url: 'http://www.hpdcareer.com/'},
     ]}

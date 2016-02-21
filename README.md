@@ -1,5 +1,5 @@
 ## Run
-You first need to install meteor [meteor](http://meteor.com).  You can then run via running
+You first need to install [meteor](http://meteor.com).  You can then run via running
 
     meteor
 
